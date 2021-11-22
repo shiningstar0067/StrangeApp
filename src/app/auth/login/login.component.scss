@@ -1,0 +1,13 @@
+$baseColor: rgb(119, 2, 80);
+
+mat-form-field {
+    width: 90%;   
+    color: $baseColor;     
+  }
+
+  .btn{
+    width: 90%;
+    padding: 10px;
+    background-color: $baseColor;
+    color: white;
+  }

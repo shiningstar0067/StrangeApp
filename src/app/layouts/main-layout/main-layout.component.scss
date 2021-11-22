@@ -1,0 +1,42 @@
+$baseColor: rgb(119, 2, 80);
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.appHeader{
+    height: 10vh;
+    background-color: $baseColor;
+    color: white;
+}
+  
+.app-container {
+    height: 80vh;
+}
+  
+.header-spacer {
+    flex: 1 1 auto;
+}
+
+mat-icon{
+    padding-right: 10px;
+}
+
+mat-toolbar{
+    mat-icon{
+        color: white;
+    }
+}
+
+.appFooter{
+    height: 10vh;
+    background-color: $baseColor;  
+    color: white;
+    div {     
+    margin: auto; 
+    font-size: 15px;
+    }
+}
+
+.appContent{
+    padding: 10px;
+}

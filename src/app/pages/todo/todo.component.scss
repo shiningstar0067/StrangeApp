@@ -1,0 +1,16 @@
+$baseColor: rgb(119, 2, 80);
+
+table {
+    width: 100%;
+  }
+
+.completed{
+  text-decoration: line-through;
+}
+
+mat-form-field {
+  mat-label{
+    height: 30px;
+  }  
+  color: $baseColor;     
+}

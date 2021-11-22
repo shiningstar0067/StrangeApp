@@ -27,9 +27,12 @@
         <ng-container matColumnDef="notes">
             <th mat-header-cell *matHeaderCellDef> My Notes </th>
             <td mat-cell *matCellDef="let todos">
-                <input id="txtEditNote" type="text" matInput value="{{todos.notes}}" [class.completed]="todos.completed"
-                    [disabled]="todos.editable" *ngIf="todos.id">
-                <!-- style="color: rgb(119, 2, 80);" -->
+                <input id="txtEditNote" type="text" 
+                    [style.color] = "todos.editable ? 'rgb(119, 2, 80)' : 'black'"
+                    [style.font-style] = "!todos.editable ? 'normal' : 'italic'"
+                    matInput value="{{todos.notes}}" 
+                    [class.completed]="todos.completed"
+                    [disabled]="todos.editable">
             </td>
         </ng-container>
 
@@ -38,7 +41,7 @@
             <td mat-cell *matCellDef="let todos">
                 <button mat-icon-button (click)="completeNotes(todos)"
                     title="{{ todos.completed ? 'Mark incomplete' : 'Mark as completed'}}">
-                    <mat-icon>playlist_add_check</mat-icon>
+                    <mat-icon>rule</mat-icon>
                 </button>
                 <button mat-icon-button (click)="deleteNotes(todos)" title="Delete Notes">
                     <mat-icon>delete_outline</mat-icon>

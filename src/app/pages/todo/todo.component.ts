@@ -122,4 +122,8 @@ export class TodoComponent implements OnInit, AfterViewInit {
 
     this.dataSource.data = this.todoList;
   }
+
+  changeColor(){
+    
+  }
 }
